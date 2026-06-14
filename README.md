@@ -48,6 +48,45 @@ package.json
 factory.config.json
 ```
 
+## How This Project Was Created
+
+This repository was originally created as an AI Factory target project using the Vanilla TypeScript template.
+
+From the sibling `aifactory` repo:
+
+```bash
+cd agentic/aifactory
+pnpm factory new aifactory-example-ts-greeting --template vanilla-ts
+cd ../aifactory-example-ts-greeting
+```
+
+That command created the initial target-project structure:
+
+```text
+requirements/
+constraints/
+handoffs/
+runs/
+templates/
+public/index.html
+src/main.ts
+src/styles.css
+factory.config.json
+package.json
+tsconfig.json
+tsconfig.build.json
+```
+
+After that, the example app was described and extended with:
+
+```text
+requirements/RQ-0002-ts-hello-form.md
+constraints/RQ-0002-ts-hello-form.json
+requirements/RQ-0003-name-history.md
+constraints/RQ-0003-name-history.json
+```
+
+RQ-0002 adds the first name / last name greeting form. RQ-0003 extends it with saved name history and a table rendered below the form.
 ## Setup
 
 Clone both repositories into the same parent directory:
