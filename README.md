@@ -87,6 +87,7 @@ constraints/RQ-0003-name-history.json
 ```
 
 RQ-0002 adds the first name / last name greeting form. RQ-0003 extends it with saved name history and a table rendered below the form.
+
 ## Setup
 
 Clone both repositories into the same parent directory:
