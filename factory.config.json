@@ -1,0 +1,39 @@
+{
+  "model": {
+    "provider": "${AI_PROVIDER}",
+    "name": "${AI_MODEL}",
+    "reviewerName": "${AI_REVIEWER_MODEL}",
+    "baseUrl": "${AI_BASE_URL}",
+    "apiKey": "${AI_API_KEY}",
+    "timeoutMs": 180000,
+    "temperature": 0.2
+  },
+  "pipeline": {
+    "maxRetries": 2,
+    "timeboxMs": 180000,
+    "maxFixIterations": 2
+  },
+  "paths": {
+    "requirements": "./requirements",
+    "constraints": "./constraints",
+    "runs": "./runs",
+    "templates": "../aifactory/templates",
+    "prompts": "../aifactory/packages/agent-factory/prompts"
+  },
+  "targetProject": {
+    "root": ".",
+    "applyArtifacts": true,
+    "allowedPaths": [
+      "index.html",
+      "public",
+      "src",
+      "tests"
+    ],
+    "commands": {
+      "typeCheck": "../aifactory/node_modules/.bin/tsc --noEmit"
+    }
+  },
+  "domain": {
+    "rules": []
+  }
+}

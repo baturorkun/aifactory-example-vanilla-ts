@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting App</title>
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="panel" aria-labelledby="title">
+            <h1 id="title">Greeting App</h1>
+            <div class="field">
+                <label for="firstNameInput">First Name:</label>
+                <input type="text" id="firstNameInput" name="firstName" autocomplete="given-name">
+            </div>
+            <div class="field">
+                <label for="lastNameInput">Last Name:</label>
+                <input type="text" id="lastNameInput" name="lastName" autocomplete="family-name">
+            </div>
+            <button type="button" id="greetButton">Greet Me</button>
+            <p id="messageDisplay" class="message" aria-live="polite"></p>
+        </section>
+
+        <section class="panel history-panel" aria-labelledby="historyTitle">
+            <h2 id="historyTitle">Saved Names</h2>
+            <p id="historyEmptyState" class="empty-state">No names have been added yet.</p>
+            <table id="namesTable" class="names-table" hidden>
+                <thead>
+                    <tr>
+                        <th scope="col">First name</th>
+                        <th scope="col">Last name</th>
+                        <th scope="col">Full name</th>
+                    </tr>
+                </thead>
+                <tbody id="namesTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../dist/main.js"></script>
+</body>
+</html>

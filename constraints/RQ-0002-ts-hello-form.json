@@ -1,0 +1,18 @@
+{
+  "targetFiles": [
+    "public/index.html",
+    "src/main.ts",
+    "src/styles.css"
+  ],
+  "stack": "Plain browser TypeScript, HTML, CSS",
+  "forbidden": [
+    "React",
+    "Vue",
+    "Angular",
+    "Svelte"
+  ],
+  "notes": [
+    "Do not use any framework.",
+    "The HTML file may live at public/index.html or index.html. It should load the compiled script from ../dist/main.js or ./dist/main.js depending on its location and load src/styles.css."
+  ]
+}

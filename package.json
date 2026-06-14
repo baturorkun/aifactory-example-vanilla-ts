@@ -1,0 +1,10 @@
+{
+  "name": "testproject1",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "typecheck": "../aifactory/node_modules/.bin/tsc --noEmit",
+    "build": "../aifactory/node_modules/.bin/tsc --project tsconfig.build.json",
+    "factory": "../aifactory/packages/agent-factory/bin/factory.js"
+  }
+}

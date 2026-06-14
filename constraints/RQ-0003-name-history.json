@@ -1,0 +1,25 @@
+{
+  "targetFiles": [
+    "public/index.html",
+    "src/main.ts",
+    "src/styles.css"
+  ],
+  "stack": "Plain browser TypeScript, HTML, CSS",
+  "forbidden": [
+    "React",
+    "Vue",
+    "Angular",
+    "Svelte",
+    "Backend server",
+    "Database"
+  ],
+  "persistence": {
+    "preferred": "localStorage",
+    "reason": "The current demo project is a static browser app and cannot write directly to a filesystem data file without a backend or browser file permission flow."
+  },
+  "notes": [
+    "Extend the existing app instead of replacing it with a framework.",
+    "Keep the data access logic isolated so a real file/API adapter can be added later.",
+    "The visible table should render saved entries after page load and after each successful submission."
+  ]
+}
